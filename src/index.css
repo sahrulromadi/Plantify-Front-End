@@ -6,3 +6,19 @@
 html {
   font-family: "Sofia", cursive;
 }
+.text-kanit {
+  font-family: "Kanit", sans-serif;
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slow-spin 3s linear infinite; 
+}
