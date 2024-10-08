@@ -42,6 +42,11 @@ const HomeSection = () => {
 
         {/* kolom 2 */}
         <div className="kolom-2 w-full relative md:w-1/2">
+          {/* blob */}
+          <div className="absolute bottom-1/3 left-1/3 -translate-x-1/2 md:left-2/3 md:bottom-2/4 lg:left-3/4">
+            <div className="bg-white rounded-full w-64 h-64 opacity-20 blur-3xl"></div>
+          </div>
+          {/* blob end */}
           <div className="absolute right-14 opacity-75 md:right-10 lg:right-32">
             <img
               src={LeafDecoration}
@@ -49,7 +54,7 @@ const HomeSection = () => {
               className="w-12 slow-spin"
             />
           </div>
-          <div>
+          <div className="flex justify-center items-center flex-col">
             <img src={Plant} alt="plant" className="w-full" />
           </div>
           <div className="absolute left-16 top-3/4 opacity-75 md:left-28 md:top-[350px] lg:top-3/4">
