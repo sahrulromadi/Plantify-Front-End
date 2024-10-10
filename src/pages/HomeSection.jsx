@@ -3,6 +3,9 @@ import "remixicon/fonts/remixicon.css";
 import Plant from "../../public/assets/img/plant.png";
 import LeafDecoration from "../../public/assets/img/leaf-decoration.png";
 import PlantDecoration from "../../public/assets/img/plant-decoration.png";
+import PotPlant1 from "../../public/assets/img/pot-plant-1.png";
+import PotPlant2 from "../../public/assets/img/pot-plant-2.png";
+import LeafDecoration2 from "../../public/assets/img/leaf-decoration-right.png";
 
 const HomeSection = () => {
   return (
@@ -130,6 +133,63 @@ const HomeSection = () => {
         </div>
       </section>
       {/* services end */}
+
+      {/* about us */}
+      <section className="relative overflow-hidden py-20 md:py-24">
+        <div className="decoration absolute -top-8 -right-12 opacity-50">
+          <img
+            src={LeafDecoration2}
+            alt="leaf-decoration-2"
+            className="w-48 md:w-56 lg:w-64"
+          />
+        </div>
+        <div className="about-title text-center mb-5">
+          <h1 className="text-4xl font-bold text-yellow-500 mb-5 md:text-5xl">
+            About Us
+          </h1>
+          <h2 className="text-kanit text-2xl text-white md:text-3xl">
+            Follow instruction for more
+          </h2>
+        </div>
+        <div className="flex-1 flex flex-col justify-center items-center px-10 mb-28 md:mb-5 md:px-20 md:flex-row">
+          <div className="flex justify-center items-center">
+            <img src={PotPlant1} alt="pot-plant-1" className="w-full" />
+          </div>
+          <div className="text-white text-left">
+            <h2 className="text-kanit text-2xl mb-5 md:text-4xl">
+              Make your <span className="text-yellow-500">organic</span> garden
+            </h2>
+            <p className="text-xl md:text-2xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+              eaque quasi maxime voluptate magni nesciunt ipsam perferendis!
+              Sunt, quo inventore dolor quia facere iusto nulla soluta possimus
+              necessitatibus non sequi.
+            </p>
+          </div>
+        </div>
+        <div className="flex-2 flex flex-col justify-center items-center px-10 md:px-20 md:flex-row-reverse">
+          <div className="flex justify-center items-center mb-14">
+            <img
+              src={PotPlant2}
+              alt="pot-plant-2"
+              className="w-9/12 md:w-8/12"
+            />
+          </div>
+          <div className="text-white text-right">
+            <h2 className="text-kanit text-2xl mb-5 md:text-4xl">
+              Come with us <span className="text-yellow-500">grow up</span> your
+              plant
+            </h2>
+            <p className="text-xl md:text-2xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+              eaque quasi maxime voluptate magni nesciunt ipsam perferendis!
+              Sunt, quo inventore dolor quia facere iusto nulla soluta possimus
+              necessitatibus non sequi.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* about us end */}
     </>
   );
 };
