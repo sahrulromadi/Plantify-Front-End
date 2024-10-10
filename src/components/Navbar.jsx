@@ -1,5 +1,4 @@
 import React from "react";
-import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import LeafUp from "../../public/assets/img/leaf-up.png";
 import LeafDown from "../../public/assets/img/leaf-down.png";
 import { useState } from "react";
@@ -44,15 +43,15 @@ const Navbar = () => {
           </div>
         </div>
         {navbarOpen ? (
-          <XMarkIcon
-            className="w-8 cursor-pointer text-white z-50 mx-6 md:hidden"
+          <i
+            className="ri-close-fill text-white text-3xl cursor-pointer z-50 mx-6 md:hidden"
             onClick={handleClick}
-          />
+          ></i>
         ) : (
-          <Bars3BottomRightIcon
-            className="w-8 cursor-pointer text-white z-50 mx-6 md:hidden"
+          <i
+            className="ri-menu-3-fill text-white text-3xl cursor-pointer z-50 mx-6 md:hidden"
             onClick={handleClick}
-          />
+          ></i>
         )}
       </nav>
     </header>

@@ -175,7 +175,7 @@ const HomeSection = () => {
               className="w-9/12 md:w-8/12"
             />
           </div>
-          <div className="text-white text-right">
+          <div className="text-white text-left md:text-right">
             <h2 className="text-kanit text-2xl mb-5 md:text-4xl">
               Come with us <span className="text-yellow-500">grow up</span> your
               plant
