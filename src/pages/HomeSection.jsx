@@ -73,57 +73,57 @@ const HomeSection = () => {
       {/* hero end */}
       {/* services */}
       <section className="bg-white w-full p-20">
-        <div className="services-section grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="services-section grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* card */}
-          <div className="card-1 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg">
+          <div className="card-1 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg space-y-5 hover:-translate-y-1 duration-300">
             <div className="title-services flex items-center gap-3 mb-3">
-              <i className="ri-truck-line text-4xl text-green-900"></i>
+              <i className="ri-home-heart-line text-4xl text-green-900"></i>
               <h3 className="text-kanit text-xl font-semibold">
-                Fast Delivery
+                Indoor Plant Design
               </h3>
             </div>
             <p className="text-lg font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate, quas. Ipsam cumque ab qui molestiae dicta?
+              Transform your indoor spaces with our expert indoor plant design
+              services.
             </p>
           </div>
 
-          <div className="card-2 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg gap-10">
+          <div className="card-2 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg space-y-5 hover:-translate-y-1 duration-300">
             <div className="title-services flex items-center gap-3 mb-3">
-              <i className="ri-truck-line text-4xl text-green-900"></i>
+              <i className="ri-tools-line text-4xl text-green-900"></i>
               <h3 className="text-kanit text-xl font-semibold">
-                Fast Delivery
+                Plant Care and Maintenance
               </h3>
             </div>
             <p className="text-lg font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate, quas. Ipsam cumque ab qui molestiae dicta?
+              Keep your plants healthy and vibrant with our professional care
+              services.
             </p>
           </div>
 
-          <div className="card-3 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg gap-10">
+          <div className="card-3 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg space-y-5 hover:-translate-y-1 duration-300">
             <div className="title-services flex items-center gap-3 mb-3">
-              <i className="ri-truck-line text-4xl text-green-900"></i>
+              <i className="ri-leaf-line text-4xl text-green-900"></i>
               <h3 className="text-kanit text-xl font-semibold">
-                Fast Delivery
+                Plant Consultation
               </h3>
             </div>
             <p className="text-lg font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate, quas. Ipsam cumque ab qui molestiae dicta?
+              Our expert team provides personalized consultations to help you
+              choose the right plants for your space.
             </p>
           </div>
 
-          <div className="card-4 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg gap-10">
+          <div className="card-4 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg space-y-5 hover:-translate-y-1 duration-300">
             <div className="title-services flex items-center gap-3 mb-3">
-              <i className="ri-truck-line text-4xl text-green-900"></i>
+              <i className="ri-book-open-line text-4xl text-green-900"></i>
               <h3 className="text-kanit text-xl font-semibold">
-                Fast Delivery
+                Workshops and Education
               </h3>
             </div>
             <p className="text-lg font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate, quas. Ipsam cumque ab qui molestiae dicta?
+              Join our engaging workshops and educational sessions to deepen
+              your knowledge of plant care and gardening.
             </p>
           </div>
           {/* card end */}
