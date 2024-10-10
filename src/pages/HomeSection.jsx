@@ -228,7 +228,7 @@ const HomeSection = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <p className="text-xl">5$</p>
+                  <p className="text-xl">{`$${data.harga}`}</p>
                   <button className="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
                     <i className="ri-shopping-cart-fill"></i>
                   </button>
