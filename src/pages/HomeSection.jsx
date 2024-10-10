@@ -6,6 +6,7 @@ import PlantDecoration from "../../public/assets/img/plant-decoration.png";
 import PotPlant1 from "../../public/assets/img/pot-plant-1.png";
 import PotPlant2 from "../../public/assets/img/pot-plant-2.png";
 import LeafDecoration2 from "../../public/assets/img/leaf-decoration-right.png";
+import { popularPlants } from "../data/popularPlants";
 
 const HomeSection = () => {
   return (
@@ -74,6 +75,7 @@ const HomeSection = () => {
         </div>
       </section>
       {/* hero end */}
+
       {/* services */}
       <section className="bg-white w-full p-20">
         <div className="services-section grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -190,6 +192,54 @@ const HomeSection = () => {
         </div>
       </section>
       {/* about us end */}
+
+      {/* popular */}
+      <section className="bg-green-800 p-20">
+        <div className="popular-title text-center flex flex-col items-center space-y-5 mb-40 md:mb-28">
+          <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
+            Popular Plant
+          </h1>
+          <h2 className="text-2xl text-white md:text-3xl">
+            Follow instruction for more
+          </h2>
+        </div>
+        <div className="container w-full py-5 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-36">
+          {/* card */}
+          {popularPlants.map((data) => {
+            return (
+              <div
+                className="bg-green-950 p-10 pt-24 rounded-md relative text-white hover:-top-8"
+                key={data.id}
+              >
+                <img
+                  src={data.image}
+                  alt={`img-${data.name}`}
+                  className="absolute w-56 -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+                <p className="italic text-2xl">{data.latin}</p>
+                <p className="text-lg">{data.name}</p>
+
+                <div className="text-yellow-500 text-xs py-3">
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <p className="text-xl">5$</p>
+                  <button className="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                    <i className="ri-shopping-cart-fill"></i>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+          {/* card end */}
+        </div>
+      </section>
+      {/* popular end */}
     </>
   );
 };
