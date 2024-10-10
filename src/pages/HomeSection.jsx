@@ -194,7 +194,7 @@ const HomeSection = () => {
       {/* about us end */}
 
       {/* popular */}
-      <section className="bg-green-800 p-20">
+      <section className="bg-green-800 p-36">
         <div className="popular-title text-center flex flex-col items-center space-y-5 mb-40 md:mb-28">
           <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
             Popular Plant
