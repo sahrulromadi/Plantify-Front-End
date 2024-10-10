@@ -145,7 +145,7 @@ const HomeSection = () => {
             className="w-48 md:w-56 lg:w-64"
           />
         </div>
-        <div className="about-title text-center mb-5">
+        <div className="about-title text-center mb-5 md:mb-10">
           <h1 className="text-4xl font-bold text-yellow-500 mb-5 md:text-5xl">
             About Us
           </h1>
@@ -153,7 +153,7 @@ const HomeSection = () => {
             Follow instruction for more
           </h2>
         </div>
-        <div className="flex-1 flex flex-col justify-center items-center px-10 mb-28 md:mb-5 md:px-20 md:flex-row">
+        <div className="flex-1 flex flex-col justify-center items-center px-10 mb-28 md:mb-5 md:px-20 md:flex-row md:py-5">
           <div className="flex justify-center items-center">
             <img src={PotPlant1} alt="pot-plant-1" className="w-full" />
           </div>
@@ -194,7 +194,7 @@ const HomeSection = () => {
       {/* about us end */}
 
       {/* popular */}
-      <section className="bg-green-800 p-36">
+      <section className="bg-green-800 pt-24 pb-44 px-24 md:p-36">
         <div className="popular-title text-center flex flex-col items-center space-y-5 mb-40 md:mb-28">
           <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
             Popular Plant
@@ -203,7 +203,7 @@ const HomeSection = () => {
             Follow instruction for more
           </h2>
         </div>
-        <div className="container w-full py-5 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-36">
+        <div className="container w-full py-0 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-36">
           {/* card */}
           {popularPlants.map((data) => {
             return (

@@ -5,7 +5,7 @@ import Floral from "../../public/assets/img/floral.png";
 const Footer = () => {
   return (
     <footer className="bg-yellow-100 relative">
-      <div className="w-3/4 md:container absolute top-0 right-0 left-0 mx-auto -translate-y-1/2 bg-green-900 text-white px-10 pt-5 pb-10 space-y-1 rounded-xl">
+      <div className="w-3/4 lg:container absolute top-0 right-0 left-0 mx-auto -translate-y-1/2 bg-green-900 text-white px-10 pt-5 pb-10 space-y-1 rounded-xl">
         <h1 className="text-3xl text-kanit mb-5">
           <span className="text-yellow-500">Subscribe</span> to our newsletter
         </h1>
