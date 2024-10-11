@@ -13,9 +13,9 @@ const Footer = () => {
           <input
             type="text"
             placeholder="Enter your email"
-            className="w-full border border-green-900 px-5 py-2 rounded-md text-kanit text-lg"
+            className="w-full border border-green-900 px-5 py-2 rounded-md text-kanit text-lg text-black"
           />
-          <button className="text-white border bg-green-950 opacity-75 border-green-950 py-2 px-5 rounded-md w-full md:mx-2 md:w-auto">
+          <button className="text-white border bg-green-950 bg-opacity-75 border-green-950 py-2 px-5 rounded-md w-full md:mx-2 md:w-auto">
             Subscribe
           </button>
         </div>
@@ -23,11 +23,11 @@ const Footer = () => {
       <div className="pt-44 md:pt-40 pb-5 mx-14 md:mx-48 md:pb-10">
         <div className="border-b border-green-500 relative">
           <div className="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 md:max-w-48 mx-auto">
-            <div className="bg-yellow-100 space-x-2 text-center text-2xl">
-              <i className="ri-facebook-fill cursor-pointer hover:text-yellow-500 duration-300"></i>
-              <i className="ri-twitter-fill cursor-pointer hover:text-yellow-500 duration-300"></i>
-              <i className="ri-instagram-fill cursor-pointer hover:text-yellow-500 duration-300"></i>
-              <i className="ri-youtube-fill cursor-pointer hover:text-yellow-500 duration-300"></i>
+            <div className="bg-yellow-100 space-x-2 text-center text-2xl text-green-900">
+              <i className="ri-facebook-fill cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-twitter-fill cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-instagram-fill cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-youtube-fill cursor-pointer hover:text-yellow-400 duration-300"></i>
             </div>
           </div>
         </div>
@@ -42,10 +42,18 @@ const Footer = () => {
               Quick Link
             </h2>
             <ul className="text-lg md:text-xl space-y-1">
-              <li>Home</li>
-              <li>About</li>
-              <li>Popular</li>
-              <li>Review</li>
+              <li className="hover:text-yellow-400">
+                <a href="#">Home</a>
+              </li>
+              <li className="hover:text-yellow-400">
+                <a href="#about-us">About</a>
+              </li>
+              <li className="hover:text-yellow-400">
+                <a href="#popular">Popular</a>
+              </li>
+              <li className="hover:text-yellow-400">
+                <a href="#testimoni">Testimoni</a>
+              </li>
             </ul>
           </div>
           <div className="item-2 mb-5">
@@ -76,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="absolute opacity-45 bottom-0 left-0">
+      <div className="absolute opacity-45 bottom-0 left-0 z-0 pointer-events-none">
         <img src={Floral} alt="floral" className="w-full lg:w-1/2" />
       </div>
     </footer>

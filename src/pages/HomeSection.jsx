@@ -12,7 +12,7 @@ const HomeSection = () => {
   return (
     <>
       {/* hero */}
-      <section className="py-20 mx-6 md:pt-36 md:mx-20">
+      <section id="home" className="py-20 mx-6 md:pt-36 md:mx-20">
         <div className="home-section flex flex-col justify-center items-center md:flex-row">
           {/* kolom 1 */}
           <div className="kolom-1 text-white md:w-1/2 mb-7">
@@ -38,10 +38,10 @@ const HomeSection = () => {
               Lorem ipsum dolor sit amet{" "}
             </p>
             <div className="flex gap-6 text-xl">
-              <i className=" ri-facebook-line hover:text-yellow-500"></i>
-              <i className="ri-twitter-line hover:text-yellow-500"></i>
-              <i className="ri-instagram-line hover:text-yellow-500"></i>
-              <i className="ri-linkedin-line hover:text-yellow-500"></i>
+              <i className="ri-facebook-line cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-twitter-line cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-instagram-line cursor-pointer hover:text-yellow-400 duration-300"></i>
+              <i className="ri-youtube-line cursor-pointer hover:text-yellow-400 duration-300"></i>
             </div>
           </div>
           {/* kolom 1 end */}
@@ -137,7 +137,10 @@ const HomeSection = () => {
       {/* services end */}
 
       {/* about us */}
-      <section className="relative overflow-hidden py-20 md:py-24">
+      <section
+        id="about-us"
+        className="relative overflow-hidden py-20 md:py-24"
+      >
         <div className="decoration absolute -top-8 -right-12 opacity-50">
           <img
             src={LeafDecoration2}
@@ -194,7 +197,7 @@ const HomeSection = () => {
       {/* about us end */}
 
       {/* popular */}
-      <section className="bg-green-800 pt-24 pb-44 px-24 md:p-36">
+      <section id="popular" className="bg-green-800 pt-24 pb-44 px-24 md:p-36">
         <div className="popular-title text-center flex flex-col items-center space-y-5 mb-40 md:mb-28">
           <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
             Popular Plant

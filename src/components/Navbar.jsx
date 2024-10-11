@@ -25,9 +25,45 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
   }, []);
 
   const showDecoration = scrollY ? "border-b border-yellow-500" : "";
+
+  // active link
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        // cek apakah posisi scroll berada dalam jangkauan section
+        if (
+          window.scrollY >= sectionTop - sectionHeight / 3 &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      // update activeLink dengan section yang sedang active
+      setActiveLink(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
@@ -39,10 +75,30 @@ const Navbar = () => {
           className={`navbar-box absolute top-0 ${showNavbar()} min-h-screen w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300 md:static md:min-h-fit md:w-auto md:bg-transparent`}
         >
           <ul className="flex flex-col gap-10 text-white text-center text-xl md:mx-0 lg:mx-14 md:flex-row">
-            <li className="hover:text-yellow-400">Home</li>
-            <li className="hover:text-yellow-400">About</li>
-            <li className="hover:text-yellow-400">Popular</li>
-            <li className="hover:text-yellow-400">Review</li>
+            {/* gunakan map */}
+            {["home", "about-us", "popular", "testimoni"].map((s, index) => {
+              return (
+                <li
+                  key={index}
+                  className={`hover:text-yellow-400 ${
+                    activeLink === s ? "text-yellow-400" : ""
+                  }`}
+                >
+                  <a
+                    href={`#${s}`}
+                    onClick={() => {
+                      // tutup navbar setelah di klik
+                      handleClick();
+                      // set active link ke section
+                      setActiveLink(s);
+                    }}
+                  >
+                    {/* untuk nama nya sesuaikan dengan id */}
+                    {s.charAt(0).toUpperCase() + s.slice(1)}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <div className="absolute top-0 left-[-20px] opacity-90 md:hidden">
             <img src={LeafUp} alt="leaf-up" className="w-44" />
