@@ -1,27 +1,40 @@
 import React from "react";
 import LeafUp from "../../public/assets/img/leaf-up.png";
 import LeafDown from "../../public/assets/img/leaf-down.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
   // untuk handle navbar
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const handleClick = () => {
     setNavbarOpen(!navbarOpen);
-    console.log("navbarOpen", navbarOpen);
   };
-
   const showNavbar = () => {
     return navbarOpen ? "left-0" : "-left-full";
   };
 
+  // untuk menambahkan decoration navbar ketika di scroll
+  const [scrollY, setScrollY] = useState(false);
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 3) {
+        setScrollY(true);
+      } else {
+        setScrollY(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const showDecoration = scrollY ? "border-b border-yellow-500" : "";
+
   return (
-    <header className="fixed w-full top-0 left-0 z-50">
-      <nav className="navbar container flex items-center justify-between h-16 mt-1 md:mt-0">
-        <h1 className="text-2xl text-white italic tracking-widest mx-6 md:mx-20">
-          Plantify
-        </h1>
+    <header
+      className={`fixed w-full top-0 left-0 z-50 bg-green-950 ${showDecoration}`}
+    >
+      <nav className="navbar flex items-center justify-between h-16 mt-1 px-7 md:px-20 md:mt-0">
+        <h1 className="text-2xl text-white italic tracking-widest">Plantify</h1>
         <div
           className={`navbar-box absolute top-0 ${showNavbar()} min-h-screen w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300 md:static md:min-h-fit md:w-auto md:bg-transparent`}
         >
@@ -44,12 +57,12 @@ const Navbar = () => {
         </div>
         {navbarOpen ? (
           <i
-            className="ri-close-fill text-white text-3xl cursor-pointer z-50 mx-6 md:hidden"
+            className="ri-close-fill text-white text-3xl cursor-pointer z-50 md:hidden"
             onClick={handleClick}
           ></i>
         ) : (
           <i
-            className="ri-menu-3-fill text-white text-3xl cursor-pointer z-50 mx-6 md:hidden"
+            className="ri-menu-3-fill text-white text-3xl cursor-pointer z-50 md:hidden"
             onClick={handleClick}
           ></i>
         )}
