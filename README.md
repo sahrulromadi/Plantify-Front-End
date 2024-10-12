@@ -1,8 +1,7 @@
-# React + Vite
+![FireShot Capture 003 - Plantify - localhost](https://github.com/user-attachments/assets/884221b6-5b6d-47a8-916d-32808e832bad)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![FireShot Capture 004 - Plantify - localhost](https://github.com/user-attachments/assets/d8a9cfeb-0410-4528-8cd6-56aac88f6a42)
 
-Currently, two official plugins are available:
+![iPhone-13-PRO-localhost](https://github.com/user-attachments/assets/a37a824b-6ab1-48d6-82d8-0cf79219f55b)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![iPhone-13-PRO-localhost (1)](https://github.com/user-attachments/assets/d814e7eb-3fee-46c2-a6f0-7763130dc80c)
