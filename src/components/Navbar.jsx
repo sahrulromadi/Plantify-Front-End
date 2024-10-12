@@ -76,7 +76,7 @@ const Navbar = () => {
         >
           <ul className="flex flex-col gap-10 text-white text-center text-xl md:mx-0 lg:mx-14 md:flex-row">
             {/* gunakan map */}
-            {["home", "about-us", "popular", "testimoni"].map((s, index) => {
+            {["home", "about", "popular", "testimoni"].map((s, index) => {
               return (
                 <li
                   key={index}

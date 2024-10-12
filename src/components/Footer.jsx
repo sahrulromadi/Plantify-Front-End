@@ -46,7 +46,7 @@ const Footer = () => {
                 <a href="#">Home</a>
               </li>
               <li className="hover:text-yellow-400">
-                <a href="#about-us">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="hover:text-yellow-400">
                 <a href="#popular">Popular</a>

@@ -138,7 +138,7 @@ const HomeSection = () => {
 
       {/* about us */}
       <section
-        id="about-us"
+        id="about"
         className="relative overflow-hidden py-20 md:py-24"
       >
         <div className="decoration absolute -top-8 -right-12 opacity-50">
