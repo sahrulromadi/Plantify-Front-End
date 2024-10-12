@@ -1,6 +1,7 @@
 import React from "react";
 import { TestimonialsData } from "../data/TestimonialsData.jsx";
 import { useState } from "react";
+import Decoration from "../../public/assets/img/leaf-decoration-right.png";
 
 const TestimonialSection = () => {
   // menyimpan indeks aktif
@@ -32,7 +33,7 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimoni"
-      className="relative bg-green-950 px-10 pt-20 pb-56 md:px-20"
+      className="relative overflow-hidden bg-green-950 px-10 pt-20 pb-56 md:px-20"
     >
       <div className="testimoni-title flex flex-col items-center justt0fy-center space-y-4 mb-24 md:mb-32">
         <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
@@ -87,6 +88,16 @@ const TestimonialSection = () => {
         })}
       </div>
       {/* bullets end */}
+
+      {/* decoration */}
+      <div className="absolute -top-5 -left-5 transform -translate-x-10 -translate-y-10 md:-left-2">
+        <img
+          src={Decoration}
+          alt="plant-decoration"
+          className="w-60 md:w-80 opacity-40"
+        />
+      </div>
+      {/* decoration end */}
     </section>
   );
 };
