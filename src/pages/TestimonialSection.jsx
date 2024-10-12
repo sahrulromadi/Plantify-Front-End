@@ -90,11 +90,11 @@ const TestimonialSection = () => {
       {/* bullets end */}
 
       {/* decoration */}
-      <div className="absolute -top-5 -left-5 transform -translate-x-10 -translate-y-10 md:-left-2">
+      <div className="absolute -top-5 -left-0 transform -translate-x-10 -translate-y-10 md:-left-2">
         <img
           src={Decoration}
           alt="plant-decoration"
-          className="w-60 md:w-80 opacity-40"
+          className="w-48 md:w-72 lg:w-80 opacity-40"
         />
       </div>
       {/* decoration end */}
