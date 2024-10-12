@@ -6,7 +6,8 @@ import PlantDecoration from "../../public/assets/img/plant-decoration.png";
 import PotPlant1 from "../../public/assets/img/pot-plant-1.png";
 import PotPlant2 from "../../public/assets/img/pot-plant-2.png";
 import LeafDecoration2 from "../../public/assets/img/leaf-decoration-right.png";
-import { popularPlants } from "../data/popularPlants";
+import { PopularPlants } from "../data/PopularPlants";
+import TestimonialSection from "./TestimonialSection";
 
 const HomeSection = () => {
   return (
@@ -77,7 +78,7 @@ const HomeSection = () => {
       {/* hero end */}
 
       {/* services */}
-      <section className="bg-white w-full p-20">
+      <section className="bg-white p-10 md:p-20">
         <div className="services-section grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* card */}
           <div className="card-1 border-dashed border-2 border-green-900 rounded-md p-5 shadow-lg space-y-5 hover:-translate-y-1 duration-300">
@@ -137,10 +138,7 @@ const HomeSection = () => {
       {/* services end */}
 
       {/* about us */}
-      <section
-        id="about"
-        className="relative overflow-hidden py-20 md:py-24"
-      >
+      <section id="about" className="relative overflow-hidden py-20 md:py-24">
         <div className="decoration absolute -top-8 -right-12 opacity-50">
           <img
             src={LeafDecoration2}
@@ -197,7 +195,7 @@ const HomeSection = () => {
       {/* about us end */}
 
       {/* popular */}
-      <section id="popular" className="bg-green-800 pt-24 pb-44 px-24 md:p-36">
+      <section id="popular" className="bg-green-800 px-10 py-20 md:px-20">
         <div className="popular-title text-center flex flex-col items-center space-y-5 mb-40 md:mb-28">
           <h1 className="text-kanit text-4xl md:text-6xl text-yellow-500 ">
             Popular Plant
@@ -208,7 +206,7 @@ const HomeSection = () => {
         </div>
         <div className="container w-full py-0 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-36">
           {/* card */}
-          {popularPlants.map((data) => {
+          {PopularPlants.map((data) => {
             return (
               <div
                 className="bg-green-950 p-10 pt-24 rounded-md relative text-white hover:-top-8"
@@ -243,6 +241,10 @@ const HomeSection = () => {
         </div>
       </section>
       {/* popular end */}
+
+      {/* testimoni */}
+      <TestimonialSection />
+      {/* testimoni end */}
     </>
   );
 };

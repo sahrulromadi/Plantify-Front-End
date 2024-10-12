@@ -20,7 +20,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="pt-44 md:pt-40 pb-5 mx-14 md:mx-48 md:pb-10">
+      <div className="pt-48 md:pt-40 pb-5 mx-14 md:mx-48 md:pb-10">
         <div className="border-b border-green-500 relative">
           <div className="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 md:max-w-48 mx-auto">
             <div className="bg-yellow-100 space-x-2 text-center text-2xl text-green-900">

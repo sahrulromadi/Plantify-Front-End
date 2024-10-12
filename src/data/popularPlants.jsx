@@ -1,6 +1,6 @@
 import PotPlant from "../../public/assets/img/pot-plant-1.png";
 
-export const popularPlants = [
+export const PopularPlants = [
   {
     id: 1,
     latin: "Cactus",
